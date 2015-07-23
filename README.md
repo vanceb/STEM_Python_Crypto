@@ -98,6 +98,7 @@ for num in range(10):
 ### Code Concepts
 
 * Lists - Bit contrived, but store each decryption attempt in a list
+* List.append()
 * Iterators
 
 ### Actions

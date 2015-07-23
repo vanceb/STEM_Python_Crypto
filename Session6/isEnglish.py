@@ -1,7 +1,7 @@
 # detectEnglish.py
 
-LETTERS = 'abcdefghijklmnopqrstuvwxyz'
-VALID = LETTERS + LETTERS.upper() + ' \t\n\r'
+LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+VALID = LETTERS + LETTERS.lower() + ' \t\n\r'
 
 def loadDictionary():
     dictionaryFile = open("dictionary.txt")

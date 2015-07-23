@@ -10,6 +10,9 @@ message = 'This is secret'
 key = 20
 translated = ''
 
+# Change the key to enable decryption
+key = len(LETTERS) - key
+
 # Convert the message to uppercase
 message = message.upper()
 

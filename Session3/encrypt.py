@@ -1,14 +1,17 @@
 ##############################
-# Caesar Cypher - Decrypt
+# Caesar Cypher - Encrypt
 ##############################
 
 # Define the alphabet that we are going to encode
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 # Define variables to hold our message, the key and the translated message
-message = 'NBCM CM MYWLYN'
+message = 'This is secret'
 key = 20
 translated = ''
+
+# Change the key to enable decryption
+key = len(LETTERS) - key
 
 # Convert the message to uppercase
 message = message.upper()
@@ -20,7 +23,7 @@ for symbol in message:
 # if it is then we get a number that represents its position
         num = LETTERS.find(symbol)
 # change the number based on the key
-        num = (num + len(LETTERS) - key) % len(LETTERS)
+        num = (num + key) % len(LETTERS)
 # get the letter from the changed number
         translated = translated + LETTERS[num]
     else:
