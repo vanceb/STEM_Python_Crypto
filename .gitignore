@@ -55,3 +55,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Pandoc documents converted into html
+*.html
