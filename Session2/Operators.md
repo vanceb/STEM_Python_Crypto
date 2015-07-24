@@ -149,6 +149,7 @@ Operators         Description
 `in` and `not in` Membership operators
 
 `and not or`      Logical operators
+
 -------------------------------------------------------------------
 
 Some of these operators you haven't been introduced to yet, but they are

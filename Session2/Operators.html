@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+<body>
+<h1 id="python-operators">Python Operators</h1>
+<h2 id="mathematical-operators">Mathematical Operators</h2>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="40%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>+</code></td>
+<td align="left">Addition - Adds values on either side of the operator</td>
+<td align="left"><code>10 + 20 = 30</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>-</code></td>
+<td align="left">Subtraction - subtracts the right hand value from the left hand value</td>
+<td align="left"><code>20 - 10 = 10</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>*</code></td>
+<td align="left">Multiplication - multiplies values on either side of the operator</td>
+<td align="left"><code>5 * 5 = 25</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>/</code></td>
+<td align="left">Division - divides the left hand value by the right hand value</td>
+<td align="left"><code>4 / 2 = 2</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>%</code></td>
+<td align="left">Modulus - divides the left hand value by the right hand value and returns the remainder</td>
+<td align="left"><code>23 % 13 = 10</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>**</code></td>
+<td align="left">Exponent - raises the left hand value to the power of the right</td>
+<td align="left"><code>2 ** 3 = 8</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>//</code></td>
+<td align="left">Floor - divides the left hand value by the right hand value and returns the whole number only</td>
+<td align="left"><code>3.0 // 2 = 1.0</code></td>
+</tr>
+</tbody>
+</table>
+<p>Mathematical operators can be used on numbers or variables that contain numbers, or a mixture of the two. If all numbers are integers (whole numbers) the result will be an integer - be aware of this for division. If any of the numbers is a float (numbers with a decimal point), then the result will be a float.</p>
+<h2 id="comparison-operators">Comparison Operators</h2>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="40%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>==</code></td>
+<td align="left">Equal - if the value of the left hand operator equals the value of the right hand operator then it returns <code>true</code></td>
+<td align="left"><code>a = 5</code><br />
+<code>a == 5 -&gt; true</code><br />
+<code>a == 7 -&gt; false</code><br />
+</td>
+</tr>
+<tr class="even">
+<td align="left"><code>!=</code></td>
+<td align="left">Not equal - if the left hand value is not equal to the right hand value then it returns <code>true</code></td>
+<td align="left"><code>a = 7</code><br />
+<code>a != 7 -&gt; false</code><br />
+<code>a != 8 -&gt; true</code><br />
+</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&gt;</code></td>
+<td align="left">Greater than - if the value on the left is larger than the value on the right then it returns <code>true</code></td>
+<td align="left"><code>a = 33</code><br />
+<code>a &gt; 25 -&gt; true</code><br />
+<code>a &gt; 50 -&gt; false</code><br />
+</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;</code></td>
+<td align="left">Less than - if the value on the left is smaller than the value on the right then it returns <code>true</code></td>
+<td align="left"><code>a = 12</code><br />
+<code>a &lt; 30 -&gt; true</code><br />
+<code>a &lt; 12 -&gt; false</code><br />
+</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&gt;=</code></td>
+<td align="left">Greater than or equal to - if the value on the left is equal to or larger than the value on the right then this is true</td>
+<td align="left"><code>a = 44</code><br />
+<code>a &gt;= 22 -&gt; true</code><br />
+<code>a &gt;= 50 -&gt; false</code><br />
+<code>a &gt;= 44 -&gt; true</code><br />
+</td>
+</tr>
+<tr class="even">
+<td align="left"><code>&lt;=</code></td>
+<td align="left">Less than or equal to - if the value on the left is equal to or smaller than the value on the right then this is true</td>
+<td align="left"><code>a = 75</code><br />
+<code>a &lt;= 122 -&gt; true</code><br />
+<code>a &lt;= 50 -&gt; false</code><br />
+<code>a &lt;= 75 -&gt; true</code><br />
+</td>
+</tr>
+</tbody>
+</table>
+<p>Comparison operators return <code>true</code> or <code>false</code> depending on then values being compared.</p>
+<h2 id="assignment-operators">Assignment Operators</h2>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="40%" />
+<col width="27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operator</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>=</code></td>
+<td align="left">Assigns the value of the right hand expression to the variable on the left</td>
+<td align="left"><code>a = 5 + 8</code><br />
+<code>a</code> now equals <code>13</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>+=</code></td>
+<td align="left">Adds the value of the right hand expression to the value of the left hand variable and assigns it to the variable on the left</td>
+<td align="left"><code>a = 4</code><br />
+<code>a += 5</code><br />
+this is equivalent to<br />
+<code>a = a + 5</code><br />
+so <code>a</code> is <code>9</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>-=</code></td>
+<td align="left">Subtracts the value of the right hand expression from the value of the left hand variable and assigns it to the variable on the left</td>
+<td align="left"><code>a = 7</code><br />
+<code>a -= 2 + 2</code><br />
+this is equivalent to<br />
+<code>a = a - (2 + 2)</code><br />
+so <code>a</code> now equals <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<p>All of the other operators listed in the <a href="#mathematical-operators">Mathematical Operators</a> section can be put before the equals sign to follow this pattern. If you find this confusing you can always use the long-hand equivalent shown in the examples. The only one you really need here is the basic assignment, <code>=</code></p>
+<h2 id="operator-precedence">Operator Precedence</h2>
+<p>Just as in basic maths we have to decide which operators are used first in a complex expression. Take the following example:</p>
+<pre><code>2 + 2 * 5 = 12</code></pre>
+<p>not <code>20</code> because multiplication and division is done before addition and subtraction. You can use brackets to make the order explicit:</p>
+<pre><code>(2 + 2) * 5 = 20</code></pre>
+<p>Now the brackets ensure that the addition is done before the multiplication. Python has the same set of rules and you can use brackets to make sure the order is clear. However, Python has many more operators than you use in normal maths and it therefore defines the following order for the order of operators.</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="66%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Operators</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>**</code></td>
+<td align="left">Exponent (raise to the power)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>~ + -</code></td>
+<td align="left">Complement and unary <code>+</code> and <code>-</code>, e.g. <code>a = -4</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>* / % //</code></td>
+<td align="left">Multiply, divide, modulus, and floor</td>
+</tr>
+<tr class="even">
+<td align="left"><code>+ -</code></td>
+<td align="left">Addition and subtraction</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt; &lt;= &gt;= &gt;</code></td>
+<td align="left">Comparison operators</td>
+</tr>
+<tr class="even">
+<td align="left"><code>== !=</code></td>
+<td align="left">Equality operators</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>= += -= ...</code></td>
+<td align="left">Assignment operators</td>
+</tr>
+<tr class="even">
+<td align="left"><code>is</code> and <code>is not</code></td>
+<td align="left">Identity operators</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>in</code> and <code>not in</code></td>
+<td align="left">Membership operators</td>
+</tr>
+<tr class="even">
+<td align="left"><code>and not or</code></td>
+<td align="left">Logical operators</td>
+</tr>
+</tbody>
+</table>
+<p>Some of these operators you haven't been introduced to yet, but they are included for reference</p>
+</body>
+</html>
