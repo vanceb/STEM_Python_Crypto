@@ -33,6 +33,7 @@ Operator  Description                  Example
           hand value by the right
           hand value and returns
           the whole number only
+
 -------------------------------------------------------------
 
 Mathematical operators can be used on numbers or variables that contain numbers, or a mixture of the two.  If all numbers are integers (whole numbers) the result will be an integer - be aware of this for division.  If any of the numbers is a float (numbers with a decimal point), then the result will be a float.
@@ -74,6 +75,7 @@ Operator  Description                  Example
           equal to or smaller than the `a <= 50 -> false` \
           value on the right then this `a <= 75 -> true` \
           is true
+
 ---------------------------------------------------------------
 
 Comparison operators return `true` or `false` depending on then values being
