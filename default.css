@@ -77,6 +77,12 @@ div#TOC, nav#TOC
         }
     }
 
+/* General font */
+
+body
+{
+    font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif;
+}
 /* ---- Headers and sections ---- */
 
 h1, h2, h3, h4, h5, h6
@@ -217,7 +223,7 @@ p.caption /* Pandoc figure-style caption within div.figure */
 
 pre, code 
     {
-    background-color: #fdf7ee;
+    background-color: #eeeeee;
     /* BEGIN word wrap */
     /* Need all the following to word wrap instead of scroll box */
     /* This will override the overflow:auto if present */
