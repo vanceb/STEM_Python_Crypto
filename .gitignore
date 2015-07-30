@@ -58,3 +58,7 @@ target/
 
 # Pandoc documents converted into html
 #*.html
+#
+# Mac Directory files
+.DS_Store
+
