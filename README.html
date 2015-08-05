@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+<body>
+<h1 id="stem_python_crypto">STEM_Python_Crypto</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A short course for school children to become familiar with Python using codes and cyphers as a vehicle. I am writing this course as a Science Technology Engineering and Maths (STEM) Ambassador, aiming to improve the take-up of these subjects among school children.</p>
+<p>The majority of the ideas come from <a href="https://inventwithpython.com/hacking/chapters/">Invent with Python - Hacking</a>, but the course is much reduced to fit into a term of 45 minute sessions</p>
+<p>This is very much, &quot;Work in Progress&quot;, and at the moment I am just capturing ideas and structure.</p>
+<h2 id="session-1---introduction-to-the-caesar-cypher">Session 1 - Introduction to the Caesar cypher</h2>
+<p><a href="https://inventwithpython.com/hacking/chapter1.html">Reference and Inspiration</a></p>
+<ul>
+<li>Introduce the course</li>
+<li>Introduce the Caesar cypher</li>
+<li>Make your own paper Caesar cypher decoding wheel</li>
+<li>Encode a message for a friend. Give them the encoded message and tell them the key and let them decode it</li>
+<li>Homework
+<ul>
+<li>Give students a coded message and ask them to think about how they could decode it without knowing the key</li>
+<li>W ZCJS QCRSG. TCF WBTCFAOHWCB OPCIH HVS BSLH ZSGGCB JWGWH VHHD://QCRSG.AS/NNRTGS</li>
+</ul></li>
+</ul>
+<h2 id="session-2---introduction-to-python">Session 2 - Introduction to Python</h2>
+<h3 id="code-topics">Code Topics</h3>
+<ul>
+<li>Basic syntax using the Python shell
+<ul>
+<li>Do some math calculations</li>
+<li>Operators especially %</li>
+<li>Variables</li>
+<li>Length of strings: len()</li>
+</ul></li>
+<li>Edit, Save and Run .py files
+<ul>
+<li>For loops
+<ul>
+<li>range()</li>
+</ul></li>
+<li>If/Else</li>
+<li>Type a small programme to print out odd numbers between 0-10</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">##############################</span>
+<span class="co"># Print odd numbers</span>
+<span class="co">##############################</span>
+<span class="cf">for</span> num <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>):
+    <span class="cf">if</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>:
+        <span class="bu">print</span> num</code></pre></div>
+<h2 id="session-3---code-a-caesar-cypher-in-python">Session 3 - Code a Caesar cypher in Python</h2>
+<h3 id="code-concepts">Code Concepts</h3>
+<ul>
+<li>Reinforcement of what was learned last week</li>
+<li>Algorithms</li>
+<li>Reading code</li>
+<li>Comments</li>
+</ul>
+<h3 id="actions">Actions</h3>
+<ul>
+<li>Load encrypt.py</li>
+<li>Review the code - maybe get them to fill in some code blanks</li>
+<li>Run the code with your own message</li>
+</ul>
+<h3 id="questions">Questions</h3>
+<ol style="list-style-type: decimal">
+<li>What happens if you change the key?</li>
+<li>What happens if you encrypt the already encrypted message using a key equal to 26 - your original encryption key?</li>
+<li>Why does this happen?</li>
+</ol>
+<h3 id="advanced">Advanced</h3>
+<ul>
+<li>Change the code to create a &quot;Decrypt&quot; program - hint You only need to add one line of code...</li>
+<li>Save your modified program as &quot;decrypt.py&quot;</li>
+<li>Encrypt a message for a friend, give them the cyphertext and tell them the key and let them decrypt and read the message</li>
+</ul>
+<h2 id="session-4---modularizing-the-caesar-cypher">Session 4 - Modularizing the Caesar cypher</h2>
+<h3 id="code-concepts-1">Code Concepts</h3>
+<ul>
+<li>Functions</li>
+<li>The &quot;main&quot; function</li>
+<li>User input</li>
+<li>Errors - unexpected types</li>
+<li>Casting to different types - int(), float(), str().</li>
+</ul>
+<h2 id="session-5---brute-force-attack">Session 5 - Brute force attack</h2>
+<h3 id="code-concepts-2">Code Concepts</h3>
+<ul>
+<li>Lists - Bit contrived, but store each decryption attempt in a list</li>
+<li>List.append()</li>
+<li>Iterators</li>
+</ul>
+<h3 id="actions-1">Actions</h3>
+<ul>
+<li>How many different keys are there?</li>
+</ul>
+<h3 id="questions-1">Questions</h3>
+<h3 id="advanced-1">Advanced</h3>
+<h2 id="session-6---detecting-english">Session 6 - Detecting English</h2>
+<h3 id="code-concepts-3">Code Concepts</h3>
+<ul>
+<li>Dictionary data structure</li>
+</ul>
+<h3 id="actions-2">Actions</h3>
+<h3 id="questions-2">Questions</h3>
+<h3 id="advanced-2">Advanced</h3>
+<h2 id="session-7---substitution-cyper">Session 7 - Substitution Cyper</h2>
+<h3 id="code-concepts-4">Code Concepts</h3>
+<ul>
+<li>Libraries and &quot;import&quot;</li>
+<li>math.factorial()</li>
+<li>Lists (a = list('abcdefghijklmnopqrstuvwxyz'))</li>
+<li>random.shuffle()</li>
+<li>Python objects and variables - variables are pointers to objects, so b = a does not create a copy, it just points to the same object (Different from simple variables) - Be careful as shuffling in place my not have the desired effect. Suggest use b = list(a) for simplicity (Don't want to really get into copy)</li>
+</ul>
+<h3 id="actions-3">Actions</h3>
+<ul>
+<li>Provide partial code - ask them to create the &quot;decrypt&quot; function</li>
+</ul>
+<h3 id="questions-3">Questions</h3>
+<ul>
+<li>Take a look at the encrypted output, do you see any patterns?</li>
+<li>Anyone played &quot;Codeword&quot; puzzles?</li>
+<li>Introduce the dotted.decimal encoding for words as in <a href="https://inventwithpython.com/hacking/chapter18.html">book</a></li>
+</ul>
+<h3 id="advanced-3">Advanced</h3>
+<ul>
+<li>Write a function that converts a word into the dotted.decimal format</li>
+<li>Modify the dictionary programme to create a python dictionary containing dotted decimal versions of all of the words in the dictionary as the keys and a list of words as the values.</li>
+</ul>
+</body>
+</html>

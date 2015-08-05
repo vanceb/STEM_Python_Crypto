@@ -10,6 +10,8 @@
     - Introduces the use of Python Dictionaries
     - Introduces sorting
     - Most frequent word is the key to the next challenge
+* Calculate the letter frequency in a paragraph of text and use the letter
+  order as a key to the next challenge (Simpler than word freq...)
 * Transposition cypher from the CIA website
     - cia.py
 * Morse code
