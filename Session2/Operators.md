@@ -127,9 +127,9 @@ brackets to make sure the order is clear.  However, Python has many more
 operators than you use in normal maths and it therefore defines the
 following order for the order of operators.
 
-------------------------------------------------------------------
+----------------------------------------------------------------------------
 Operators         Description
-----------------  ------------------------------------------------
+----------------  ----------------------------------------------------------
 `**`              Exponent (raise to the power)
 
 `~ + -`           Complement and unary `+` and `-`, e.g. `a = -4`
@@ -150,7 +150,7 @@ Operators         Description
 
 `and not or`      Logical operators
 
--------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 Some of these operators you haven't been introduced to yet, but they are
 included for reference

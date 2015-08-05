@@ -10,3 +10,8 @@
     - Introduces the use of Python Dictionaries
     - Introduces sorting
     - Most frequent word is the key to the next challenge
+* Transposition cypher from the CIA website
+    - cia.py
+* Morse code
+    - Create an encoder/decoder
+    - Play sounds of the morse code being played...

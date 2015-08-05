@@ -231,7 +231,12 @@ Have the code for crack with blanks for them to fill in...
   is an integer (whole number)
     * Hint type this into the Python shell: type(5) == int
 
-## Session 4 - Substitution cypher
+## Session 4 - Detecting English - letting the computer decide when we have
+decrypted the message
+
+TODO https://inventwithpython.com/hacking/chapter12.html
+
+## Session 5 - Substitution cypher
 
 * increase the number of keys by shuffling them rather than shifting them.
 * How many keys are there now? (26!) 
@@ -258,4 +263,4 @@ Have the code for crack with blanks for them to fill in...
 ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 ```
 
-
+# 
