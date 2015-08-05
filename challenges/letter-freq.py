@@ -5,7 +5,7 @@ LETTERS = 'acbdefghijklmnopqrstuvwxyz'
 
 def printSortedDict(dict, reverse=False):
     for key in sorted(dict, reverse=reverse):
-        print str(key) + ": " + str(dict[key])
+        print(str(key) + ": " + str(dict[key]))
 
 def invert(dict):
     inverted = {}
@@ -28,7 +28,7 @@ def frequency(dict, reverse=False):
 if __name__ == "__main__":
     args = sys.argv
     if len(args) != 2:
-        print 'Usage: %s <filename> Where <filename> is the name of the file you want to process' % args[0]
+        print('Usage: %s <filename> Where <filename> is the name of the file you want to process' % args[0])
         sys.exit(-1)
     else:
         freq = {}
@@ -43,7 +43,7 @@ if __name__ == "__main__":
                             else:
                                 freq[character] = 1
         except:
-            print 'Problem reading file: %s' % args[1]
+            print ('Problem reading file: %s' % args[1])
 
 
         print (frequency(freq))
