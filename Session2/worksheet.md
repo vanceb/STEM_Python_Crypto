@@ -91,6 +91,8 @@ What do you think is going to happen here?
 
     'Hello ' * 3
 
+Try it in the Python Shell and see.
+
 ## Writing programs, saving them and running them
 
 Open a new file window by selecting `File->New File`
@@ -107,4 +109,4 @@ for number in range(10):
 Save the file by selecting `File->Save` and call it `odd.py`, then run the
 program by pressing the `F5` key.
 
-Try to change the program so that it prints the even numbers instead. 
+Try to change the program so that it prints the even numbers instead.
