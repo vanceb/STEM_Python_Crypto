@@ -47,17 +47,26 @@ def main():
     # good answer
     while not mode in modes:
         # Get the desired mode from the user
-        mode = raw_input("Would you like to encrypt or decrypt (e/d): ")
+        # Python2
+        #mode = raw_input("Would you like to encrypt or decrypt (e/d): ")
+        # Python3
+        mode = input("Would you like to encrypt or decrypt (e/d): ")
 
     # Get the message from the user
-    message = raw_input("Please type your message: ")
+    # Python2
+    #message = raw_input("Please type your message: ")
+    # Python3
+    message = input("Please type your message: ")
 
     # We will need a key from the user
-    key = int(raw_input("Please type a whole number for the key: "))
+    # Python2
+    #key = int(raw_input("Please type a whole number for the key: "))
+    # Python3
+    key = int(input("Please type a whole number for the key: "))
     if mode == 'd':
-        print decrypt(key, message)
+        print (decrypt(key, message))
     else:
-        print encrypt(key, message)
+        print (encrypt(key, message))
 
 #####################################
 # if we run this file with Python like:
