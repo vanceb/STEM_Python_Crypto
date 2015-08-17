@@ -36,28 +36,34 @@ def decrypt(key, message):
     decrypt_key = len(LETTERS) - key
     return caesar(decrypt_key, message)
 
-#####################################
+def main():
+    # This function is run if we run the file directly using python
+    # We can use it to encrypt and decrypt messages with user input
 
-# This is the main part of the programme flow
+    modes = 'ed' # The allowed modes
+    mode = 'x' # The mode we are going to use (Currently invalid)
 
-modes = 'edc' # The allowed modes
-mode = 'x' # The mode we are going to use
+    # The while loop allows us to repeat the question if we don't get a
+    # good answer
+    while not mode in modes:
+        # Get the desired mode from the user
+        mode = raw_input("Would you like to encrypt or decrypt (e/d): ")
 
-# Whichever mode we use we will always need a message
-message = raw_input("Please type your message: ")
+    # Get the message from the user
+    message = raw_input("Please type your message: ")
 
-while not mode in modes:
-    # Get the desired mode from the user
-    mode = raw_input("encrypt, decrypt, or crack? (e/d/c): ")
-
-if mode == 'c':
-    # We are going to try all keys
-    for key in range(len(LETTERS)):
-        print str(key) + ": " + decrypt(key, message)
-else:
     # We will need a key from the user
     key = int(raw_input("Please type a whole number for the key: "))
     if mode == 'd':
         print decrypt(key, message)
     else:
         print encrypt(key, message)
+
+#####################################
+# if we run this file with Python like:
+# python caesar.py
+# then the variable __name__ will be set to "__main__"
+# and we will therefore run the main() function
+
+if __name__ == '__main__':
+    main()
